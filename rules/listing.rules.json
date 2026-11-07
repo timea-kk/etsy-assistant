@@ -1,0 +1,20 @@
+{
+  "listing": {
+    "title": { "maxChars": 140, "maxWordsSoft": 15, "noRepeatedPhrase": true },
+    "tags": { "exactCount": 13, "maxCharsEach": 20, "noDuplicates": true },
+    "basketSummary": { "maxChars": 200 },
+    "description": { "noEmDash": true, "requiresPhrase": "No AI" }
+  },
+  "pin": {
+    "title": { "maxChars": 100 },
+    "description": { "minChars": 200, "maxChars": 300, "noHashtags": true, "noEmDash": true },
+    "overlay": { "minWords": 4, "maxWords": 8 },
+    "image": { "width": 1000, "height": 1500, "maxMB": 5 },
+    "taggedTopicsMax": 10
+  },
+  "copy": {
+    "bannedWordsFile": "rules/banned-words.txt",
+    "forbiddenMentions": ["Romania", "Romanian"]
+  },
+  "anchorTagsFlagged": ["digital download", "instant download"]
+}

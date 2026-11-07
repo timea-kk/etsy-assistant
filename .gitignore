@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Secrets: API keys, OAuth tokens
+.env
+.env.*
+
+# Build output (extension is built into dist)
+src/extension/dist/
+
+# OS and editor files
+.DS_Store
+.vscode/
+*.log
