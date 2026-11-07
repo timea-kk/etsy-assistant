@@ -4,8 +4,16 @@
   "private": true,
   "type": "module",
   "description": "Tools to write, check, and submit Pattern Mind Design listings and pins.",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "validate": "node src/cli/validate.js",
+    "build:extension": "node scripts/build-extension.js",
+    "ready": "node scripts/ready.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }

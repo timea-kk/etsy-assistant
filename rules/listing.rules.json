@@ -16,5 +16,6 @@
     "bannedWordsFile": "rules/banned-words.txt",
     "forbiddenMentions": ["Romania", "Romanian"]
   },
-  "anchorTagsFlagged": ["digital download", "instant download"]
+  "anchorTagsFlagged": ["digital download", "instant download"],
+  "fillDefaults": { "quantity": 999 }
 }

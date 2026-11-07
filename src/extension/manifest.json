@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Pattern Mind Design Listing Filler",
+  "version": "0.3.0",
+  "description": "Fills Etsy's Add a listing form with the listing Claude wrote in Claude Code, after checking it against the shop rules.",
+  "permissions": ["activeTab", "scripting", "clipboardRead"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fill Etsy listing"
+  }
+}

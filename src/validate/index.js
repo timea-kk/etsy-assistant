@@ -165,6 +165,9 @@ export function validatePin(pin, config, { image } = {}) {
     const why = pin.imagePath ? `not read (${pin.imagePath})` : 'no image given';
     out.push(result('pin.image.dimensions', 'Image size in px', 'skip', why));
     out.push(result('pin.image.maxMB', 'Image file size', 'skip', why));
+  } else if (image.error) {
+    out.push(result('pin.image.dimensions', 'Image size in px', 'fail', image.error));
+    out.push(result('pin.image.maxMB', 'Image file size', 'fail', image.error));
   } else {
     const known = image.format === 'png' || image.format === 'jpeg';
     const dimsOk = known && image.width === width && image.height === height;

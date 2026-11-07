@@ -5,6 +5,9 @@ node_modules/
 .env
 .env.*
 
+# Saved Etsy pages and other private files (contain shop details)
+private/
+
 # Build output (extension is built into dist)
 src/extension/dist/
 

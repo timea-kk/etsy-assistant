@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fill Etsy listing</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Fill Etsy listing</h1>
+  <p id="status" role="status">Fill listing uses the listing Claude copied for you. Clear form empties the boxes.</p>
+  <ul id="details"></ul>
+  <div class="buttons">
+    <button id="again" type="button">Fill listing</button>
+    <button id="clear" type="button" class="secondary">Clear form</button>
+  </div>
+  <label id="paste-label" for="paste" hidden>Or paste the listing here (Cmd+V). It fills straight away.</label>
+  <textarea id="paste" spellcheck="false" hidden></textarea>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

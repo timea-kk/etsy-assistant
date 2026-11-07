@@ -8,6 +8,8 @@
 - No Claude-themed content on social media. It conflicts with the hand-drawn, no-AI brand.
 - Instagram is low priority. TikTok and Pinterest are the growth channels.
 - The Valentine's set is built after Cozy Christmas. Launch target mid-January 2027.
+- Listings are written by Claude in Claude Code from Timea's images and note, checked by the validator, and put on the clipboard. The extension reads the clipboard and fills the form in one click. No paid API key: Timea does not want extra costs. (7 Nov 2026)
+- The Chrome extension fills Etsy's own "Add a listing" form in Timea's browser. Timea adds photos and files and saves the listing herself. The Etsy API route is on hold until Etsy approves a developer app and digital listings are confirmed. (7 Nov 2026)
 
 ## Valentine's options under consideration
 1. Folk Valentine Botanicals: roses, tulips, love-knot leaves, small folk hearts, about 100 stamps. Closest to the current style.

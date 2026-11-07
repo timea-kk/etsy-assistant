@@ -47,6 +47,15 @@ Tag scores come from a third-party tool, not eRank. The scores are in knowledge/
 - `npm test`: run the validator tests. Must pass before any commit.
 - `npm run validate -- <file.json>`: check a listing or pin JSON from the command line.
 - Extension: load unpacked from src/extension/dist in Chrome developer mode.
+- `npm run ready -- <listing.json>`: check a listing and, only if it passes, copy it to the clipboard for the extension.
+
+## Writing a listing (Timea's main workflow)
+Timea sends product images and a short note in chat. No paid API: the writing happens here, never in the extension.
+1. Read knowledge/voice-rules.md, knowledge/listing-template.md, and knowledge/tag-scores.md.
+2. Write title, description, 13 tags, and basket summary. Take counts only from the images, her note, or knowledge/. Never guess a count.
+3. Save it as JSON (title, description, tags, basketSummary) in private/listings/<name>.json. private/ is not on GitHub.
+4. Run `npm run ready -- private/listings/<name>.json`. If it fails, fix the copy and run it again.
+5. Show her the listing in plain words, list anything she should check, and tell her to click the extension on Etsy's "Add a listing" page. The extension fills the form; she adds photos, files, and price, and saves.
 
 ## Working style
 - Build the validator first. It needs no network and is the most useful part.
